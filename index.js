@@ -10,6 +10,6 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/register', validateDatas, validateName, validateNewUser, RegisterController);
-app.use('login', validateDatas, LoginController);
+app.use('/login', validateDatas, LoginController);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
