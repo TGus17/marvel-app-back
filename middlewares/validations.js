@@ -1,5 +1,6 @@
 const { verifyEmailAndPassword } = require('../util/verifications');
 const { findUserByEmail } = require('../services/UserService');
+const validateToken = require('../auth/validateToken');
 
 const validateDatas = (req, res, next) => {
   const { email, password } = req.body;
@@ -23,8 +24,17 @@ const validateNewUser = async (req, res, next) => {
   return next();
 }
 
+const deliverUserWithValidToken = (req, res, next) => {
+  const { authorization } = req.headers;
+  const validUser = validateToken(authorization);
+  if (!validUser) return res.status(404).json({ message: 'Invalid Token' });
+  req.user = validUser;
+  return next();
+}
+
 module.exports = {
   validateDatas,
   validateName,
   validateNewUser,
+  deliverUserWithValidToken,
 };
