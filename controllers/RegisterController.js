@@ -1,6 +1,6 @@
 const { Router } = require('express');
-const RegisterController = new Router();
 const service = require('../services/UserService');
+const RegisterController = new Router();
 
 RegisterController.post('/', async (req, res) => {
   const { name, email, password } = req.body;
