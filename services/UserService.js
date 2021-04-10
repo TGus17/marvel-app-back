@@ -13,7 +13,12 @@ const findUserByEmail = async (email) => {
     return null;
   }
 }
+
+const updateUser = async (id, name, email, password) => {
+  await User.update({ name, email, password }, { where: { id } });
+}
   module.exports = {
     createUser,
     findUserByEmail,
+    updateUser,
   };

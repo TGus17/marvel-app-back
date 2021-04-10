@@ -7,6 +7,4 @@ const verifyEmailAndPassword = (email, password) => {
     emailFormat);
 };
 
-module.exports = {
-  verifyEmailAndPassword,
-};
+module.exports = verifyEmailAndPassword;
