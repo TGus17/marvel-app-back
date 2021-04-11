@@ -27,7 +27,8 @@ const validateNewUser = async (req, res, next) => {
 const deliverUserWithValidToken = (req, res, next) => {
   const { authorization } = req.headers;
   const validUser = validateToken(authorization);
-  if (!validUser) return res.status(404).json(response(true, 'Invalid Token'));
+  if (!validUser) return res.status(404).
+    json(response(true, 'User is not logged in. Please log in to make these changes.'));
   req.user = validUser;
   return next();
 }
