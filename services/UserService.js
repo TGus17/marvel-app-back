@@ -14,11 +14,13 @@ const findUserByEmail = async (email) => {
   }
 }
 
-const updateUser = async (id, name, email, password) => {
-  await User.update({ name, email, password }, { where: { id } });
-}
+const updateUser = async (id, name, email, password) => User.update({ name, email, password }, { where: { id } });
+
+const deleteUser = async (id) => User.destroy({ where: { id } });
+
   module.exports = {
     createUser,
     findUserByEmail,
     updateUser,
+    deleteUser,
   };
