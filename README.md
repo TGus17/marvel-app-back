@@ -1,10 +1,11 @@
 <h1 align="center">Bem vindos ao repositório backend de uma aplicação da Marvel</h1>
 
-<p align="justify">Esse repositório faz parte de uma aplicação web MarvelApp. Aqui você irá encontrar o backend da aplicação. O frontend encontra-se <a href='https://github.com/TGus17/marvel-app-front'>aqui</a>). A aplicação consiste em um mecanismo de busca por characters e comics da marvel. Esse projeto foi desenvolvido como um requisito para um processo seletivo. Possui caráter de estudo e se encontra em desenvolvimento.</p>
+<p align="justify">Esse repositório faz parte de uma aplicação web MarvelApp. Aqui você irá encontrar o backend da aplicação. O frontend encontra-se <a href='https://github.com/TGus17/marvel-app-front'>aqui</a>. A aplicação consiste em um mecanismo de busca por characters e comics da marvel. Esse projeto foi desenvolvido como um requisito para um processo seletivo. Possui caráter de estudo e se encontra em desenvolvimento.</p>
 
 ## Requisitos
 <p>Para rodar esse projeto você precisará ter o MySQL Server instalado na sua máquina</p>
 
+## Instruçẽs de uso
 + Clone esse repositório
 ```javascript
 git clone https://github.com/TGus17/marvel-app-back.git
