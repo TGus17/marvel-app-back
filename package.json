@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npx sequelize-cli db:create && npx sequelize-cli db:migrate $",
     "start": "node index.js",
+    "drop": "npx sequelize-cli db:drop $",
     "dev": "nodemon index.js"
   },
   "repository": {
