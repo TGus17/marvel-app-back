@@ -12,7 +12,7 @@ git clone https://github.com/TGus17/marvel-app-back.git
 ```
 + Entre na pasta raíz do projeto
 ```javascript
-cd MARVEL-APP-BACK
+cd marvel-app-back
 ```
 + Rode no terminal: 
 ```javascript
