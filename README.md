@@ -21,3 +21,10 @@ npm run prestart //para criar o banco de dados e criar a tabela de usuários
 npm start //para iniciar o servidor
 sudo systemctl start mysql //para iniciar uma conexão com o banco
 ```
+## Tecnologias usadas
++ NodeJS
++ Sequelize
++ MySQL
+
+## Desenvolvedor
++ <a href="https://github.com/TGus17">Gustavo Oliva</a>
