@@ -5,7 +5,7 @@
 ## Requisitos
 <p>Para rodar esse projeto você precisará ter o MySQL Server instalado na sua máquina</p>
 
-## Instruçẽs de uso
+## Instruçẽs de instalação
 + Clone esse repositório
 ```javascript
 git clone https://github.com/TGus17/marvel-app-back.git
