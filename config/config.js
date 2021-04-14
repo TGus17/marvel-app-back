@@ -1,12 +1,17 @@
 require('dotenv').config();
 
-const { MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_HOSTNAME } = process.env;
+const {
+  MYSQL_USERNAME,
+  MYSQL_PASSWORD,
+  MYSQL_HOSTNAME,
+  MYSQL_DATABASE,
+} = process.env;
 
 module.exports = {
   "development": {
     "username": MYSQL_USERNAME,
     "password": MYSQL_PASSWORD,
-    "database": "marvel-app-users",
+    "database": MYSQL_DATABASE,
     "host": MYSQL_HOSTNAME,
     "dialect": "mysql"
   },
